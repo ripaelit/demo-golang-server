@@ -236,7 +236,7 @@ func UpdateAge(s *storage.Storage) http.HandlerFunc {
 	}
 }
 
-// convertSlice - makes slice of integers from interface with slice of integers
+// convertSlice - helper funct
 func convertSlice(in []interface{}) (out []int) {
 	b := make([]int, len(in))
 	for i := range in {
