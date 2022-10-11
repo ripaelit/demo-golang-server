@@ -1,11 +1,11 @@
 //Просто так.
-GET http://localhost:8088/
+GET http://localhost:8080/
 Accept: application/json
 
 ###
 
 //Создание пользователя
-POST http://localhost:8088/create
+POST http://localhost:8080/create
 Content-Type: application/json
 
 {
@@ -16,7 +16,7 @@ Content-Type: application/json
 ###
 
 //Создание пользователя
-POST http://localhost:8088/create
+POST http://localhost:8080/create
 Content-Type: application/json
 
 {
@@ -29,7 +29,7 @@ Content-Type: application/json
 ###
 
 //Создание пользователя
-POST http://localhost:8088/create
+POST http://localhost:8080/create
 Content-Type: application/json
 
 {
@@ -40,7 +40,7 @@ Content-Type: application/json
 ###
 
 //Создание пользователя
-POST http://localhost:8088/create
+POST http://localhost:8080/create
 Content-Type: application/json
 
 {
@@ -51,7 +51,7 @@ Content-Type: application/json
 ###
 
 //Создание друзей
-POST http://localhost:8088/make_friends
+POST http://localhost:8080/make_friends
 Content-Type: application/json
 
 {"source_id": "1","target_id": "2"}
@@ -59,7 +59,7 @@ Content-Type: application/json
 ###
 
 //Создание друзей
-POST http://localhost:8088/make_friends
+POST http://localhost:8080/make_friends
 Content-Type: application/json
 
 {"source_id": "1","target_id": "3"}
@@ -67,7 +67,7 @@ Content-Type: application/json
 ###
 
 //Создание друзей
-POST http://localhost:8088/make_friends
+POST http://localhost:8080/make_friends
 Content-Type: application/json
 
 {"source_id": "1","target_id": "4"}
@@ -75,7 +75,7 @@ Content-Type: application/json
 ###
 
 //Создание друзей
-POST http://localhost:8088/make_friends
+POST http://localhost:8080/make_friends
 Content-Type: application/json
 
 {"source_id": "1","target_id": "3"}
@@ -83,7 +83,7 @@ Content-Type: application/json
 ###
 
 //Создание друзей
-POST http://localhost:8088/make_friends
+POST http://localhost:8080/make_friends
 Content-Type: application/json
 
 {"source_id": "4","target_id": "3"}
@@ -91,28 +91,28 @@ Content-Type: application/json
 ###
 
 //Создание друзей
-POST http://localhost:8088/make_friends
+POST http://localhost:8080/make_friends
 Content-Type: application/json
 
 {"source_id": "2","target_id": "4"}
 
 ###
 
-//Получение друзей
-GET http://localhost:8088/friends/1
+//Получение всех друзей
+GET http://localhost:8080/friends/1
 Accept: application/json
 
 ###
 
 
 //Получение всех пользоватлей
-GET http://localhost:8088/get_users
+GET http://localhost:8080/get_users
 Accept: application/json
 
 ###
 
 //Удаление пользователя
-DELETE http://localhost:8088/user
+DELETE http://localhost:8080/user
 Content-Type: application/json
 
 {"target_id": "4"}
@@ -120,13 +120,13 @@ Content-Type: application/json
 ###
 
 //Получение всех пользоватлей
-GET http://localhost:8088/get_users
+GET http://localhost:8080/get_users
 Accept: application/json
 
 ###
 
 //Изминение возраста
-PUT http://localhost:8088/user/1
+PUT http://localhost:8080/user/1
 Content-Type: application/json
 
 {"new age": "78"}

@@ -35,5 +35,5 @@ func main() {
 	// заглушка
 	router.Get("/", handler.Get())
 
-	log.Println(http.ListenAndServe("localhost:8088", router))
+	log.Println(http.ListenAndServe("localhost:8080", router))
 }
