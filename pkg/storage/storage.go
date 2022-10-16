@@ -19,20 +19,16 @@ func MakeStorage() *Storage {
 	}
 }
 
-func autoIncrement() {
-	userId++
-}
-
 // AddUser - добавление пользователя
 func (s *Storage) AddUser(name string, age int, friends []int) int {
 
 	if name != "" {
-		defer autoIncrement()
 
 		newUser := user.MakeUser()
 		newUser.SetName(name)
 		newUser.SetAge(age)
 		newUser.SetFriends(friends)
+		userId := len(s.store) + 1
 
 		s.store[userId] = newUser
 	}
